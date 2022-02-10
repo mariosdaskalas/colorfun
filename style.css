@@ -1,3 +1,27 @@
-* {
-    border: 1px solid black;
+body {
+    background-color: #212B1E;
+}
+header {
+    text-align: center;
+}
+#logo {
+    width: 400px;
+    height: 150px;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(4, 250px);
+    grid-gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    height: 550px;
+}
+.box {
+    background-color: white;
+    border: 1px solid grey;
+}
+footer {
+    border: 1px solid white;
+    text-align: center;
 }
