@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" type="text/css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet">
     <title>Colorfun</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="/assets/favicon/site.webmanifest">
-<link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="./assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header>
-        <img id="logo" src="/assets/colorfun.png" alt="Logo">
+        <img id="logo" src="./assets/colorfun.png" alt="Logo">
     </header>
     <main> 
 
@@ -31,12 +31,15 @@
         <div class="box f">F</div>
         <div class="box g">G</div>
         <div class="box h">H</div>
-        
+
     </main>
     <footer>
         <input type="submit" value="HEX Generator">
-        <input type="range" min="0" max="255" class="slider" id="range">
+        <span class="colorRange">Red</span><input type="range" min="0" max="255" class="slider" id="sred">
+        <span class="colorRange">Green</span><input type="range" min="0" max="255" class="slider" id="sgreen">
+        <span class="colorRange">Blue</span><input type="range" min="0" max="255" class="slider" id="sblue">
+        <input type="submit" value="RGB Generator" onclick="rgbRegenerate()">
     </footer>
 </body>
-<script src="/main.js"></script>
+<script src="./main.js"></script>
 </html>

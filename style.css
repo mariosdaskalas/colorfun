@@ -20,8 +20,22 @@ main {
 .box {
     background-color: white;
     border: 1px solid grey;
+    border-radius: 0.3rem;
 }
 footer {
-    border: 1px solid white;
     text-align: center;
+}
+input[type=submit] {
+    padding: 10px;
+    border-radius: 0.5rem;
+    font-style: italic;
+    margin: 0 0.5rem;
+    box-shadow: rgb(177, 170, 170);
+}
+input[type=submit]:hover {
+    cursor: pointer;
+}
+.colorRange {
+    color: white;
+    padding: 10px;
 }
