@@ -3,6 +3,7 @@ body {
 }
 header {
     text-align: center;
+    margin: 0 auto;
 }
 #logo {
     width: 400px;
@@ -21,6 +22,7 @@ main {
     background-color: white;
     border: 1px solid grey;
     border-radius: 0.3rem;
+    text-align: center;
 }
 footer {
     text-align: center;
@@ -32,10 +34,11 @@ input[type=submit] {
     margin: 0 0.5rem;
     box-shadow: rgb(177, 170, 170);
 }
-input[type=submit]:hover {
+.input[type=submit]:hover {
     cursor: pointer;
 }
 .colorRange {
     color: white;
     padding: 10px;
+    font-size: 110%;
 }
