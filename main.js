@@ -1,8 +1,3 @@
-console.log("Hi!");
-
-let arr = ['A', 'B', 'C', 'D', 'E', 'F', 0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-let item = arr[Math.floor(Math.random() * arr.length)];
-
 /* RGB Slider */
 
 let sliderRed = document.getElementById("sred");
@@ -21,3 +16,29 @@ function sliderChange() {
     document.getElementById("c").style.backgroundColor = rgb;
     document.getElementById("h").style.backgroundColor = rgb;
 }
+
+function reset() {
+    location.reload();
+}
+
+/* HEX Color Analysis */
+
+function rand(min, max) {
+    let randomNumber = Math.random() * (max-min) + min;
+    return Math.floor(randomNumber);
+};
+
+function generateColor() {
+    let hex = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let color = "#";
+
+    for(let i = 0; i <=5 ; i++) {
+        let index = rand(0, 15);
+        color = color + hex[index];
+    }
+    console.log(color);
+    document.getElementById("e").style.backgroundColor = color;
+    document.getElementById("b").style.backgroundColor = color;
+    document.getElementById("g").style.backgroundColor = color;
+    document.getElementById("d").style.backgroundColor = color;
+};

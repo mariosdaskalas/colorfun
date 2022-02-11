@@ -23,6 +23,7 @@ main {
     border: 1px solid grey;
     border-radius: 0.3rem;
     text-align: center;
+    cursor: pointer;
 }
 footer {
     text-align: center;
@@ -32,7 +33,7 @@ input[type=submit] {
     border-radius: 0.5rem;
     font-style: italic;
     margin: 0 0.5rem;
-    box-shadow: rgb(177, 170, 170);
+    cursor: pointer;
 }
 .input[type=submit]:hover {
     cursor: pointer;
