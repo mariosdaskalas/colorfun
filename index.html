@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Head Section & Favicon -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,32 +9,35 @@
     <link href="./style.css" type="text/css" rel="stylesheet">
     <title>Colorfun</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="./assets/favicon/site.webmanifest">
-<link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <!-- Logo Section -->
     <header>
         <img id="logo" src="./assets/colorfun.png" alt="Logo">
     </header>
-    <main> 
 
-        <!-- First Section -->
+    <main> 
+        <!-- First Box Section -->
         <div class="box" id="a">A</div>
         <div class="box" id="b">B</div>
         <div class="box" id="c">C</div>
         <div class="box" id="d">D</div>
         
-        <!-- Second Section -->
+        <!-- Second Box Section -->
         <div class="box" id="e">E</div>
         <div class="box" id="f">F</div>
         <div class="box" id="g">G</div>
         <div class="box" id="h">H</div>
 
     </main>
+    
+    <!-- Buttons -->
     <footer>
         <input type="submit" value="HEX Generator" onclick="generateColor()">
         <input type="submit" value="Reset" onclick="reset()">
@@ -41,7 +46,10 @@
         <span class="colorRange">Blue</span><input type="range" min="0" max="255" class="slider" id="sblue">
         <p id="hidden">Something has vanished!</p>
         <p id="notice">"Play around with the boxes. Have some fun with it!"</p>
+        <p id="author">Created with ❤️ and Enthusiasm by <a href="https://github.com/mariosdaskalas" target="_blank"><span>@mariosdaskalas</span></a></p>
     </footer>
 </body>
+
+<!-- JS File -->
 <script src="./main.js"></script>
 </html>

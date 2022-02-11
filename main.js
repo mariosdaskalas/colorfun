@@ -7,6 +7,7 @@ sliderGreen.addEventListener("input", sliderChange);
 let sliderBlue = document.getElementById("sblue");
 sliderBlue.addEventListener("input", sliderChange);
 
+/* Change background colors in real time by slideer */
 function sliderChange() {
     console.log(`Red: ${sliderRed.value} / Green : ${sliderGreen.value} / Blue: ${sliderBlue.value}`);
     let rgb = `rgb(${sliderRed.value}, ${sliderGreen.value}, ${sliderBlue.value})`;
@@ -25,11 +26,15 @@ function reset() {
 
 /* HEX Color Analysis */
 
+/* Choose a random number */
 function rand(min, max) {
     let randomNumber = Math.random() * (max-min) + min;
     return Math.floor(randomNumber);
 };
 
+/* Generate hex color code,
+   assign background color to a box
+*/
 function generateColor() {
     let hex = ['A', 'B', 'C', 'D', 'E', 'F', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     let color = "#";
@@ -45,8 +50,7 @@ function generateColor() {
     document.getElementById("d").style.backgroundColor = color;
 };
 
-/* Checked if element is clicked */
-
+// Set ID's
 let a = document.getElementById("a");
 let hidden = document.getElementById("hidden");
 let d = document.getElementById("d");
@@ -54,6 +58,9 @@ let f = document.getElementById("f");
 let g = document.getElementById("g");
 let h = document.getElementById("h");
 
+/* Checked if element is clicked
+   then set properties
+*/
 a.addEventListener("click", () => {
     a.style.display = "none";
     hidden.style.display = "block";
@@ -75,5 +82,3 @@ g.addEventListener("click", () => {
 h.addEventListener("click", () => {
     h.style.backgroundColor = "black";
 });
-
-
