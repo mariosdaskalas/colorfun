@@ -68,7 +68,7 @@ a.addEventListener("click", () => {
 
 d.addEventListener("click", () => {
     d.innerHTML = "Whoohoo, hidden text has been revealed!";
-    d.style.fontSize = "300%";
+    d.style.fontSize = "100%";
     d.style.fontStyle = "italic";
 });
 
@@ -77,7 +77,7 @@ f.addEventListener("click", () => {
 });
 
 g.addEventListener("click", () => {
-    g.innerHTML = "💖 💖 💖 💖 💖";
+    g.innerHTML = "💖 💖 💖";
 });
 h.addEventListener("click", () => {
     h.style.backgroundColor = "black";
